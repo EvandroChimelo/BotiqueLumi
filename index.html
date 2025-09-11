@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Lume - Elegância que inspira</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+            <div class="container">
+                <img src="assets/img/Logo_Lumi1.jpg"href="#" class="logo">
+                <nav class="navbar">
+                    <a href="#home">Inicio</a>
+                    <a href="#beneficios">Benefícios</a>
+                    <a href="#modelos">Modelos</a>
+                    <a href="#depoimentos">Depoimentos</a>
+                    <a href="#pedido">Faça seu Pedido</a>
+                </nav>
+           </div>
+    </header>
+
+   
+
+    <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Elegância e Estilo que Iluminam Você</h1>
+                <p>Descubra peças únicas que realçam a sua beleza.</p>
+            </div>
+        </section>
+   
+    <section class="section container" id="beneficios">
+            <h2 class="section-title">Por que escolher a Boutique Lume?</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="fas fa-tshirt card-icon"></i>
+                    <h3>Roupas da Moda</h3>
+                    <p>Peças selecionadas seguindo as últimas tendências para você arrasar.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-shipping-fast card-icon"></i>
+                    <h3>Entrega Rápida</h3>
+                    <p>Receba suas compras no conforto da sua casa com agilidade e segurança.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-gem card-icon"></i>
+                    <h3>Qualidade Inigualável</h3>
+                    <p>Tecidos premium e acabamento impecável em cada detalhe.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container" id="modelos">
+            <h2 class="section-title">Nossos Modelos</h2>
+            <div class="tags-container">
+                <span class="tag">Blusas</span>
+                <span class="tag">Calças</span>
+                <span class="tag">Saias</span>
+                <span class="tag">Vestidos</span>
+                <span class="tag">Joias</span>
+                <span class="tag">Acessórios</span>
+            </div>
+            </section>
+
+        <section class="section container" id="depoimentos">
+            <h2 class="section-title">O que nossas clientes dizem</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <img src="assets/img/cliente-1.jpg" alt="Foto da Cliente Ana" class="testimonial-photo">
+                    <p class="testimonial-text">"As roupas são maravilhosas, de altíssima qualidade e o atendimento é impecável. Amei minha compra!"</p>
+                    <h4 class="testimonial-name">Ana Silva</h4>
+                </div>
+                 <div class="testimonial">
+                    <img src="assets/img/cliente-2.jpg" alt="Foto da Cliente Maria" class="testimonial-photo">
+                    <p class="testimonial-text">"Encontrei o vestido perfeito para uma ocasião especial. A entrega foi super rápida. Recomendo!"</p>
+                    <h4 class="testimonial-name">Maria Oliveira</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="assets/img/cliente-3.jpg" alt="Foto da Cliente Maria" class="testimonial-photo">
+                    <p class="testimonial-text">"Roupas perfeito. A entrega foi super rápida. Recomendo!"</p>
+                    <h4 class="testimonial-name">Joana </h4>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button disabled>Anterior</button>
+                <button disabled>Próximo</button>
+            </div>
+        </section>
+
+        <section class="section container" id="pedido">
+            <h2 class="section-title">Faça seu Pedido Agora!</h2>
+            <form action="obrigado.html" class="order-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone (WhatsApp):</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço de Entrega:</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                </div>
+                <div class="form-group">
+                    <label for="roupa">Escolha a Roupa:</label>
+                    <select id="roupa" name="roupa" required>
+                        <option value="">Selecione um modelo</option>
+                        <option value="blusa-seda">Blusa de Seda</option>
+                        <option value="calca-alfaiataria">Calça Alfaiataria</option>
+                        <option value="saia-midi">Saia Midi Plissada</option>
+                        <option value="vestido-festa">Vestido de Festa</option>
+                         <option value="colar-prata">Colar de Prata</option>
+                    </select>
+                </div>
+                <fieldset class="form-group">
+                    <legend>Forma de Pagamento:</legend>
+                    <div class="radio-group">
+                        <label>Dinheiro <input type="radio" name="pagamento" value="dinheiro" required></label>
+                        <label>Cartão <input type="radio" name="pagamento" value="cartao"></label>
+                        <label>PIX <input type="radio" name="pagamento" value="pix"></label>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                <label class="checkbox-label">
+                    Adicionar uma observação ao pedido<input type=" checkbox" name="observacao">
+                </label>
+            </div>
+                <button type="submit" class="btn-submit">Enviar Pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Boutique Lume</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 Boutique Lume. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
