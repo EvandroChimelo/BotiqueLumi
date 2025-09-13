@@ -22,8 +22,6 @@
            </div>
     </header>
 
-   
-
     <section class="hero" id="home">
             <div class="hero-content">
                 <h1>Elegância e Estilo que Iluminam Você</h1>
@@ -64,30 +62,25 @@
             </div>
             </section>
 
-        <section class="section container" id="depoimentos">
-            <h2 class="section-title">O que nossas clientes dizem</h2>
-            <div class="testimonial-container">
-                <div class="testimonial">
-                    <img src="assets/img/cliente-1.jpg" alt="Foto da Cliente Ana" class="testimonial-photo">
-                    <p class="testimonial-text">"As roupas são maravilhosas, de altíssima qualidade e o atendimento é impecável. Amei minha compra!"</p>
-                    <h4 class="testimonial-name">Ana Silva</h4>
-                </div>
-                 <div class="testimonial">
-                    <img src="assets/img/cliente-2.jpg" alt="Foto da Cliente Maria" class="testimonial-photo">
-                    <p class="testimonial-text">"Encontrei o vestido perfeito para uma ocasião especial. A entrega foi super rápida. Recomendo!"</p>
-                    <h4 class="testimonial-name">Maria Oliveira</h4>
-                </div>
-                <div class="testimonial">
-                    <img src="assets/img/cliente-3.jpg" alt="Foto da Cliente Maria" class="testimonial-photo">
-                    <p class="testimonial-text">"Roupas perfeito. A entrega foi super rápida. Recomendo!"</p>
-                    <h4 class="testimonial-name">Joana </h4>
-                </div>
-            </div>
-            <div class="testimonial-nav">
-                <button disabled>Anterior</button>
-                <button disabled>Próximo</button>
-            </div>
-        </section>
+            <section class="section container" id="depoimentos">
+                <h2 class="section-title">O que nossas clientes dizem</h2>
+                
+                    <div class="testimonial-container-interactive">
+                        <button class="testimonial-btn" id="prevBtn" aria-label="Depoimento Anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        
+                        <div class="testimonial-content">
+                            <img src="assets/img/cliente-1.jpg" alt="Foto da Cliente" class="testimonial-photo" id="testimonial-photo">
+                            <p class="testimonial-text" id="testimonial-text">"Carregando..."</p>
+                            <h4 class="testimonial-name" id="testimonial-name">Carregando...</h4>
+                        </div>
+                        
+                        <button class="testimonial-btn" id="nextBtn" aria-label="Próximo Depoimento">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+            </section>
 
         <section class="section container" id="pedido">
             <h2 class="section-title">Faça seu Pedido Agora!</h2>
@@ -146,6 +139,6 @@
             <p class="copyright">&copy; 2025 Boutique Lume. Todos os direitos reservados.</p>
         </div>
     </footer>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
